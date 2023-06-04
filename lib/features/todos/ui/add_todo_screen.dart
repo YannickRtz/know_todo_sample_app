@@ -24,6 +24,7 @@ class AddTodoScreenState extends ConsumerState<AddTodoScreen> {
         _newTodoTitle = _textEditingController.text;
       });
     });
+    super.initState();
   }
 
   @override
