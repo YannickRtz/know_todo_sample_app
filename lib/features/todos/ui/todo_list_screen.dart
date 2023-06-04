@@ -1,3 +1,4 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:knowunity_todo/features/todos/ui/todo_list.dart';
 
@@ -11,7 +12,7 @@ class TodoListScreen extends StatelessWidget {
       body: const TodoList(),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          // TODO
+          context.beamToNamed('/new');
         },
         label: const Text('Add Todo'),
         icon: const Icon(Icons.add),
