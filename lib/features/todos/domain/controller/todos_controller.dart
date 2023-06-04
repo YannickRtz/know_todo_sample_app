@@ -14,7 +14,7 @@ class Todos extends _$Todos {
 
   Future<void> addTodo(Todo todo) async {
     // To keep the UI responsive, update data in memory first:
-    state = AsyncValue.data([...?state.value, todo]);
+    state = AsyncValue.data([todo, ...?state.value]);
     // TODO: Handle network issues
     final todosRepo = ref.read(jsonPlaceholderTodosRepositoryImplProvider);
     await todosRepo.addTodo(todo);
