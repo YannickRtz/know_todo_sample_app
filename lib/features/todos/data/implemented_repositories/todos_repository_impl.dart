@@ -16,6 +16,7 @@ class JsonPlaceholderTodosRepositoryImpl implements TodosRepository {
   @override
   Future<void> addTodo(Todo todo) async {
     final url = Uri(
+      scheme: 'https',
       host: 'jsonplaceholder.typicode.com',
       path: 'todos',
     ).toString();
@@ -37,6 +38,7 @@ class JsonPlaceholderTodosRepositoryImpl implements TodosRepository {
   @override
   Future<List<Todo>> fetchTodos() async {
     final url = Uri(
+      scheme: 'https',
       host: 'jsonplaceholder.typicode.com',
       path: 'todos',
     ).toString();
@@ -44,7 +46,7 @@ class JsonPlaceholderTodosRepositoryImpl implements TodosRepository {
     await Future.delayed(const Duration(seconds: 2));
     final response = await dio.get(url);
     if (response.statusCode == 200) {
-      final todos = response.data as List<Map<String, dynamic>>;
+      final todos = response.data as List<dynamic>;
       return todos
           .map((t) => Todo.fromJson(t))
           .where((t) => t.userId == 1) // TODO: User Management
@@ -57,6 +59,7 @@ class JsonPlaceholderTodosRepositoryImpl implements TodosRepository {
   @override
   Future<void> updateTodo(Todo todo) async {
     final url = Uri(
+      scheme: 'https',
       host: 'jsonplaceholder.typicode.com',
       path: 'todos/${todo.id}',
     ).toString();
