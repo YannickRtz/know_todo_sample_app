@@ -1,0 +1,16 @@
+# This file configures the Flutter localization
+# For official documentation, see: https://docs.google.com/document/d/10e0saTfAv32OZLRmONy866vnaw0I2jwL8zukykpgWBc/edit#
+
+# The directory where the template and translated arb files are located:
+arb-dir: lib/l10n
+
+# The template arb file that will be used as the basis for generating the Dart localization and messages files:
+template-arb-file: app_en.arb
+
+# The filename for the output localization and localizations delegate classes:
+output-localization-file: app_localizations.dart
+
+# We do not need nullable backwards-compatibility. This is a poorly documented option, but seems to work.
+nullable-getter: false
+
+untranslated-messages-file: missing_translations.txt

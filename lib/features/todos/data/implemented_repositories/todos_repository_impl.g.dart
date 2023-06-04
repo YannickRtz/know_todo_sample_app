@@ -7,7 +7,7 @@ part of 'todos_repository_impl.dart';
 // **************************************************************************
 
 String _$jsonPlaceholderTodosRepositoryImplHash() =>
-    r'5d2b36340573df0e9aae701ec123e00e4b63bcfc';
+    r'055162891cde95baa07e4a42799fac37ff1f278c';
 
 /// See also [jsonPlaceholderTodosRepositoryImpl].
 @ProviderFor(jsonPlaceholderTodosRepositoryImpl)

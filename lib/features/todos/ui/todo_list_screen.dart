@@ -1,5 +1,6 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:knowunity_todo/features/todos/ui/todo_list.dart';
 
 class TodoListScreen extends StatelessWidget {
@@ -8,13 +9,13 @@ class TodoListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Knowunity Todos')),
+      appBar: AppBar(title: Text(AppLocalizations.of(context).knowunity_todos)),
       body: const TodoList(),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           context.beamToNamed('/new');
         },
-        label: const Text('Add Todo'),
+        label: Text(AppLocalizations.of(context).add_todo),
         icon: const Icon(Icons.add),
       ),
     );
