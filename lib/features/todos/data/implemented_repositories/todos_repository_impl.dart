@@ -42,7 +42,7 @@ class JsonPlaceholderTodosRepositoryImpl implements TodosRepository {
       host: 'jsonplaceholder.typicode.com',
       path: 'todos',
     ).toString();
-    // Artificial dilay to show loading spinner:
+    // Artificial delay to show loading spinner:
     await Future.delayed(const Duration(seconds: 2));
     final response = await dio.get(url);
     if (response.statusCode == 200) {

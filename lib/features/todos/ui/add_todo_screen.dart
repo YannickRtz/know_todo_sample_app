@@ -29,6 +29,12 @@ class AddTodoScreenState extends ConsumerState<AddTodoScreen> {
   }
 
   @override
+  void dispose() {
+    _textEditingController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
