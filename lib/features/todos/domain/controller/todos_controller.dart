@@ -1,5 +1,5 @@
-import 'package:knowunity_todo/features/todos/data/implemented_repositories/todos_repository_impl.dart';
-import 'package:knowunity_todo/features/todos/domain/models/todo.dart';
+import 'package:know_todo/features/todos/data/implemented_repositories/todos_repository_impl.dart';
+import 'package:know_todo/features/todos/domain/models/todo.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'todos_controller.g.dart';

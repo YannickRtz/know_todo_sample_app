@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:knowunity_todo/routing/app_root_location.dart';
+import 'package:know_todo/routing/app_root_location.dart';
 
 void main() {
   runApp(ProviderScope(child: TodosApp()));

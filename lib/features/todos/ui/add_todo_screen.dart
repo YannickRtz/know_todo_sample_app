@@ -2,8 +2,8 @@ import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:knowunity_todo/features/todos/domain/controller/todos_controller.dart';
-import 'package:knowunity_todo/features/todos/domain/models/todo.dart';
+import 'package:know_todo/features/todos/domain/controller/todos_controller.dart';
+import 'package:know_todo/features/todos/domain/models/todo.dart';
 
 class AddTodoScreen extends ConsumerStatefulWidget {
   const AddTodoScreen({Key? key}) : super(key: key);

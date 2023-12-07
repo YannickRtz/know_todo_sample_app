@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:knowunity_todo/features/todos/domain/controller/todos_controller.dart';
-import 'package:knowunity_todo/features/todos/domain/models/todo.dart';
+import 'package:know_todo/features/todos/domain/controller/todos_controller.dart';
+import 'package:know_todo/features/todos/domain/models/todo.dart';
 
 class TodoList extends ConsumerWidget {
   const TodoList({Key? key}) : super(key: key);

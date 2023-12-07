@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:knowunity_todo/features/todos/domain/abstract_repositories/todos_repository.dart';
-import 'package:knowunity_todo/features/todos/domain/models/todo.dart';
-import 'package:knowunity_todo/utils/dio_provider.dart';
+import 'package:know_todo/features/todos/domain/abstract_repositories/todos_repository.dart';
+import 'package:know_todo/features/todos/domain/models/todo.dart';
+import 'package:know_todo/utils/dio_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'todos_repository_impl.g.dart';

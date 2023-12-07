@@ -1,4 +1,4 @@
-import 'package:knowunity_todo/features/todos/domain/models/todo.dart';
+import 'package:know_todo/features/todos/domain/models/todo.dart';
 
 abstract class TodosRepository {
   Future<List<Todo>> fetchTodos();

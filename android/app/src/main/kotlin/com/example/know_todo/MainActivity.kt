@@ -1,4 +1,4 @@
-package com.example.knowunity_todo
+package com.example.know_todo
 
 import io.flutter.embedding.android.FlutterActivity
 

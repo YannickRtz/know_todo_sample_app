@@ -1,7 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:knowunity_todo/features/todos/ui/add_todo_screen.dart';
-import 'package:knowunity_todo/features/todos/ui/todo_list_screen.dart';
+import 'package:know_todo/features/todos/ui/add_todo_screen.dart';
+import 'package:know_todo/features/todos/ui/todo_list_screen.dart';
 
 class AppRootLocation extends BeamLocation<BeamState> {
   @override
